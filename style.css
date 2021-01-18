@@ -20,5 +20,8 @@ h1, h2, h3, h4, h5, h6 {
 	color: #D3869B;
 }
 p {
-	color: #FFFFFF
+	color: #FFFFFF;
+}
+a,li{
+	color: #88AD6F;
 }

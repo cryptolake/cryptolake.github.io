@@ -21,8 +21,11 @@ body
 {
 	background-color: #282828;
 }
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3 {
 	color: #D3869B;
+}
+h4, h5, h6 {
+	color: #D6A556;
 }
 p {
 	color: #FFFFFF;
@@ -59,12 +62,13 @@ nav ul {
   height: 40px;
   margin: 5px;
 }
-
 .profile {
-
+	display: flex;
+	flex-direction: column;
 }
-
-.gimg {
+.profile img {
+	padding-left: 40%;
 	width: 20%;
 	height: 20%;
 }
+

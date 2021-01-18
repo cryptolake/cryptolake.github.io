@@ -33,30 +33,30 @@ a {
 a:hover {
 	color: #A64829;
 }
-.nav {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #32302F;
+nav ul {
+	display: flex;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #32302F;
 }
 .navitems {
-	float: left;
+  display: inline-block;
 }
 
 .navitems a {
   display: block;
+  font-size: 150%;
   text-align: center;
+  line-height: 3em;
+  padding: 1em 3em;
   padding: 14px 16px;
   text-decoration: none;
 }
 
 .navitems img {
-  display: block;
-  text-align: center;
-  width: 10%;
-  height: 10%;
-  padding: 14px 16px;
-  margin: 20px;
-  text-decoration: none;
+  width:  70px;
+  height: 70px;
+  margin: 10px;
 }

@@ -1,0 +1,6 @@
+#!/bin/bash
+[ ! -d "posts" ] && mkdir posts
+
+postname=$(date +%M%H%d%m%y)
+$EDITOR ./posts/$postname.html
+

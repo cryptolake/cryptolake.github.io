@@ -22,6 +22,25 @@ h1, h2, h3, h4, h5, h6 {
 p {
 	color: #FFFFFF;
 }
-a,li{
+a {
 	color: #88AD6F;
+}
+a:hover {
+	color: #A64829;
+}
+.nav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #32302F;
+}
+.nav li{
+	float: left;
+}
+.nav a {
+  display: block;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
 }

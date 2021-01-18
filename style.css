@@ -14,7 +14,7 @@ p {
 html {
   box-sizing: border-box;
 }
-header {
+header,main {
 	text-align: center;
 }
 body
@@ -33,6 +33,7 @@ a {
 a:hover {
 	color: #A64829;
 }
+
 nav ul {
 	display: flex;
 	list-style-type: none;
@@ -61,4 +62,9 @@ nav ul {
 
 .profile {
 
+}
+
+.gimg {
+	width: 20%;
+	height: 20%;
 }

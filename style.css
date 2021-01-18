@@ -54,6 +54,8 @@ a:hover {
 .navitems img {
   display: block;
   text-align: center;
+  width: 10%;
+  height: 10%;
   padding: 14px 16px;
   text-decoration: none;
 }

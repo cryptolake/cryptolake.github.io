@@ -47,16 +47,14 @@ nav ul {
 
 .navitems a {
   display: block;
-  font-size: 130%;
+  font-size: 120%;
   text-align: center;
-  line-height: 3em;
-  padding: 1em 3em;
   padding: 14px 16px;
   text-decoration: none;
 }
 
 .navitems img {
-  width:  54px;
-  height: 54px;
-  margin: 10px;
+  width:  40px;
+  height: 40px;
+  margin: 5px;
 }

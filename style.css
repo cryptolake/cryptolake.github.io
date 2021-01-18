@@ -35,10 +35,10 @@ a:hover {
   overflow: hidden;
   background-color: #32302F;
 }
-.nav li{
+.navitems {
 	float: left;
 }
-.nav a {
+.navitems a {
   display: block;
   text-align: center;
   padding: 14px 16px;

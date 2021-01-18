@@ -6,6 +6,11 @@ h4,
 h5 {
   font-family: sans-serif;
 }
+
+p {
+	font-family: monospace;
+}
+
 html {
   box-sizing: border-box;
 }

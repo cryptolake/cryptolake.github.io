@@ -3,18 +3,20 @@ h1,
 h2,
 h3,
 h4,
+li,
 h5 {
   font-family: sans-serif;
+  text-align: center;
 }
 
 p {
-	font-family: monospace;
+	font-family: sans-serif;
 }
 
 html {
   box-sizing: border-box;
 }
-header,main {
+header {
 	text-align: center;
 }
 body
@@ -33,7 +35,7 @@ p {
 a {
 	color: #88AD6F;
 }
-a:hover {
+a:hover,li {
 	color: #A64829;
 }
 
@@ -49,7 +51,7 @@ nav ul {
   display: inline-block;
 }
 
-.navitems a {
+.navitems a  {
   display: block;
   font-size: 120%;
   text-align: center;
@@ -71,4 +73,23 @@ nav ul {
 	width: 20%;
 	height: 20%;
 }
-
+.alig-center {
+	text-align: center;
+}
+.blog {
+	list-style-type: none;
+	margin: 1%;
+	padding: 1%;
+	overflow: hidden;
+}
+.blog li {
+	margin: 3%;
+	padding: 3%;
+	background-color: #32302F;
+}
+.blog li a {
+  font-family: sans-serif;
+  text-align: center;
+  font-weight: bold;
+  font-size: 200%
+}

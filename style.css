@@ -22,23 +22,25 @@ header {
 	text-align: center;
 }
 main {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
 	order: 2;
 	margin: 5%;
-}
-h1, h2, h3 {
-	color: #454545;
-}
-h4, h5, h6 {
-	color: #454545;
-}
-p {
-	color: #454545;
 }
 a {
 	color: #0077aa;
 	text-decoration: none;
 }
+body.light-theme {
+	color: #454545;
+	background-color: #ffff
+}
 
+.dark-theme {
+  color: #eee;
+  background: #121212;
+}
 
 nav ul {
 	display: flex;
@@ -83,16 +85,24 @@ nav ul {
 	list-style-type: none;
 	margin: 1%;
 	padding: 1%;
-	overflow: hidden;
+	text-align: center;
+	display: flex;
+	flex-flow: row wrap;
 }
 .blog li {
 	margin: 3%;
-	padding: 3%;
 	/* background-color: #32302F; */
 }
 .blog li a {
   font-family: sans-serif;
   text-align: center;
   font-weight: bold;
-  font-size: 200%
+  font-size: 170%
+}
+
+
+.btn-toggle {
+    background:none;
+    border:none;
+    cursor: pointer;
 }

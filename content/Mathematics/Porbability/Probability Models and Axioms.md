@@ -11,6 +11,7 @@
 - `∨` This is the symbol for  the OR operation
 - `∧` This is the symbol for the AND operation
 - `Ω`  This is the symbol for the entire set in the sample space
+- `A'c` Complement of A, The set of probability that are not A
 
 ## Sample Space
 ### What is a Sample Space?
@@ -109,3 +110,71 @@ By convention probabilities are always given in range between 0 and 1, 0 means t
 - Nonnegativity: `P(A) >= 0` A probability can never be negative
 - Normalization: `P(Ω) = 1` The probability of the entire sample space is always 1
 - (Finite) Additivity: `If A ∧ B = None, then P(A ∨ B) = P(A) + P(B)`
+
+### Example:
+Let A and B be events on the same sample space, with P(A)=0.6 and P(B)=0.7. Can these two events be disjoint?
+
+The answer is: *NO*
+
+If the two events were disjoint, the additivity axiom would imply that P(A∪B)=P(A)+P(B)=1.3>1, which would contradict the normalization axiom.
+
+These are consequences of the axioms.
+
+### Rules of probability:
+Rules are the results of the axioms
+
+-  ![[Mathematics/Porbability/Pasted image 20220927111322.png]]
+if we have two sets A and B, A is part of B so set A smaller than B, So if B is larger than A then naturally the probability that the outcome falls inside B should be at least as big as the probability that the outcome falls inside A.
+
+Formally:
+if A inside B, then P(A) <= P(B)
+
+B = A U (B ∩ A'c)
+P(B) = P(A) + P(B ∩ A'c) >= P(A) Since a probability can never be negative
+
+-  ![[Mathematics/Porbability/Pasted image 20220927111430.png]]
+
+let's say a=P(A and B'c) b=P(A and B) c=P(B and A'c)
+
+![[Mathematics/Porbability/Pasted image 20220927111537.png]]
+
+
+```
+P(A U B) = a + b + c
+P(A) + P(B) - P(A and B) = (a+b) + (b+c) - b
+						 = a + b + c
+
+```
+
+As a consequence we have:
+
+ ![[Mathematics/Porbability/Pasted image 20220927112036.png]]
+
+
+![[Mathematics/Porbability/Pasted image 20220927112143.png]]
+
+![[Mathematics/Porbability/Pasted image 20220927112600.png]]
+
+### More Examples: Discrete
+
+![[Mathematics/Porbability/Screenshot_20220927_120306.png]]
+
+
+We Can see that every possible outcome has a probability of 1/16
+Let `P(x = 1) = 4 * 1/16 = 1/4` this the probability that the first roll is 1
+
+Let `Z = min(x,y)` is a function that gives us the minimum of x and y
+`P(z == 4) = 1/16` this is because if `x==4`  then `y==4` vice versa.
+
+Let `P(Z==2) = 5 * 1/16` this is because we take all `x, y` that are `x, y >= 2` which are 5
+
+### Discreet uniform law
+
+![[Mathematics/Porbability/Pasted image 20220927121508.png]]
+
+### More Examples: Continuous
+
+
+## Notes:
+PS: i just discovered you can mathjax in obsidian so i can output math by latex inside `$ $` like so:
+$\mathbf{P}(A) + \mathbf{P}(A^ c) +\mathbf{P}(B) = \mathbf{P}(A\cup A^ c\cup B)$

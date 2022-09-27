@@ -173,6 +173,32 @@ Let `P(Z==2) = 5 * 1/16` this is because we take all `x, y` that are `x, y >= 2`
 ![[Mathematics/Porbability/Pasted image 20220927121508.png]]
 
 ### More Examples: Continuous
+	![[Mathematics/Porbability/Pasted image 20220927145207.png]]
+
+let's take the example of the dart board from earlier
+
+the Area of a subset is the *probability* of that area of that subset.
+![[Mathematics/Porbability/Pasted image 20220927145938.png]]
+
+for the first probability P({(x, y) | x + y <= 1/2}))  we took the area under that triangle and got 1/8, this the probability of x equals or under half and y equals or under 1/2.
+
+for the second probability we have P({(0.5, 0.3)}) it's 0 because the area of a single point it zero.
+
+## Probability calculation steps
+We have four steps
+
+- ### Specify the sample space:
+	we first write down the sample space
+
+- ### Specify a probability law:
+	Choose a probability that suits the phenomena that you are studying
+	for example for the last example we chose the event in which the area of the subset is the probability of the event
+
+- ### Identify an event of interest
+	We need to know the event to get the probability of
+
+- ### Calculate...
+
 
 
 ## Notes:

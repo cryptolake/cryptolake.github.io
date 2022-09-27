@@ -199,8 +199,17 @@ We have four steps
 
 - ### Calculate...
 
+### Example: Discrete but infinite sample space
+An example of such an experiment is the number of coin tosses until we observe heads for the first time it's properties are following:
+	- Sample space: {1, 2, ...}
+	because it can take any arbitrary positive integer.
+	- then we specify the probability law we want to use: P(n) = 1/2^n, n = 1, 2, 3,...
+	This probability law works because if we add all of the probabilities we get 1 
+	$\sum_{n=1}^{\infty}=1/2 * 1/(1-(1/2)) = 1$
 
 
 ## Notes:
 PS: i just discovered you can mathjax in obsidian so i can output math by latex inside `$ $` like so:
 $\mathbf{P}(A) + \mathbf{P}(A^ c) +\mathbf{P}(B) = \mathbf{P}(A\cup A^ c\cup B)$
+
+PS: Don't be afraid to calculate and get into the nitty gritty of math

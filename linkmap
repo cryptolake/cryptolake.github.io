@@ -1,11 +1,11 @@
 /Articles/Activation/index.{html} /Articles/Activation/
+/Articles/Articles/index.{html} /Articles/Articles/
 /Articles/C-compilation-under-the-hood/index.{html} /Articles/C-compilation-under-the-hood/
 /Articles/C-static-libraries/index.{html} /Articles/C-static-libraries/
-/Articles/Optimization/index.{html} /Articles/Optimization/
-/Articles/Regularization-in-ML/index.{html} /Articles/Regularization-in-ML/
-/index.html /
-/Articles/Articles/index.{html} /Articles/Articles/
-/Articles/Car-Detector/index.{html} /Articles/Car-Detector/
 /Articles/Hard-links-vs-Symbolic-links-Whats-the-difference/index.{html} /Articles/Hard-links-vs-Symbolic-links-Whats-the-difference/
 /Articles/Static-Libraries-vs-Dynamic-Libraries-in-C/index.{html} /Articles/Static-Libraries-vs-Dynamic-Libraries-in-C/
+/index.html /
+/Articles/Car-Detector/index.{html} /Articles/Car-Detector/
+/Articles/Optimization/index.{html} /Articles/Optimization/
+/Articles/Regularization-in-ML/index.{html} /Articles/Regularization-in-ML/
 /Articles/What-Happens-When-you-Type-ls-l-.c-in-the-shell/index.{html} /Articles/What-Happens-When-you-Type-ls-l-.c-in-the-shell/

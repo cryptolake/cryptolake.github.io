@@ -1,4 +1,4 @@
-# This My Knowledge base/Blog
+# This My Blog
 
 ## About me:
 Hey there! , My name is Dhia and i'm an aspiring Data Scientist and a forever student, in a journey of self learning assisted through Holberton School and edx.

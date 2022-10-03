@@ -4,6 +4,13 @@ This is the index of my personal articles!
 ## Projects
 - [[Articles/Car Detector]]: car detector my final year project with my team
 
+## Machine learning
+- [[Articles/Activation]]: Activation Functions
+
+- [[Articles/Optimization]]: Optimization methods
+
+- [[Articles/Regularization in ML]]: Regularization techniques
+
 ## C programming
 - [[Articles/C compilation under the hood]]
 
@@ -14,11 +21,3 @@ This is the index of my personal articles!
 - [[Articles/Static Libraries vs Dynamic Libraries in C]]
 
 - [[Articles/What Happens When you Type “ls -l *.c” in the shell]]
-
-
-## Machine learning
-- [[Articles/Activation]]: Activation Functions
-
-- [[Articles/Optimization]]: Optimization methods
-
-- [[Articles/Regularization in ML]]: Regularization techniques

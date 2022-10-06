@@ -11,6 +11,8 @@ This is the index of my personal articles!
 
 - [[Articles/Regularization in ML]]: Regularization techniques
 
+- [[Articles/Summary of the AlexNet paper]]: My summary of the AlexNet paper 
+
 ## C programming
 - [[Articles/C compilation under the hood]]
 

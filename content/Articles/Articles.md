@@ -13,6 +13,8 @@ This is the index of my personal articles!
 
 - [[Articles/Summary of the AlexNet paper]]: My summary of the AlexNet paper 
 
+- [[Articles/My transfer learning experiment]]: Transfer learning experiment
+
 ## C programming
 - [[Articles/C compilation under the hood]]
 

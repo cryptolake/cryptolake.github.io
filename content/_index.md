@@ -8,7 +8,32 @@ Hey there! , My name is Dhia and i'm an aspiring Data Scientist and a forever st
 - Github: [cryptolake](https://github.com/cryptolake)
 - LinkedIn: [Dhia Dahmeni](https://www.linkedin.com/in/dhia-dahmeni-577a42216/)
 
+### Projects
+- [[Articles/Car Detector]]: car detector my final year project with my team
+
+### Machine learning
+- [[Articles/Activation]]: Activation Functions
+
+- [[Articles/Optimization]]: Optimization methods
+
+- [[Articles/Regularization in ML]]: Regularization techniques
+
+- [[Articles/Summary of the AlexNet paper]]: My summary of the AlexNet paper 
+
+- [[Articles/My transfer learning experiment]]: Transfer learning experiment
+
+### C programming
+- [[Articles/C compilation under the hood]]
+
+- [[Articles/C static libraries]]
+
+- [[Articles/Hard links vs Symbolic links, What’s the difference?]]
+
+- [[Articles/Static Libraries vs Dynamic Libraries in C]]
+
+- [[Articles/What Happens When you Type “ls -l *.c” in the shell]]
+
+
 ## What is this:
 I Decided to use obsidian as my knowledge base for studying machine learning/Data Science, software engineering and random subjects So i will be touching in multiple subjects throughout my journey and will be publishing all of my articles here! Welcome!
 
-## My articles: [[Articles/Articles]]

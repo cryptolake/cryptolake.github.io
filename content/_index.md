@@ -1,7 +1,7 @@
 # This My Blog
 
 ## About me:
-Hey there! , My name is Dhia and i'm an aspiring Data Scientist and a forever student, in a journey of self learning assisted through Holberton School and edx.
+Hey there! , My name is Dhia and i'm an aspiring Software Engineer/ML Engineer and a forever student, in a journey of self learning assisted through Holberton School, edx and coursera.
 
 ## Contacts:
 - Email: [dhiadah@gmail.com](https://mailto:dhiadah@gmail.com)
@@ -47,4 +47,3 @@ Hey there! , My name is Dhia and i'm an aspiring Data Scientist and a forever st
 
 ## What is this:
 I Decided to use obsidian as my knowledge base for studying machine learning/Data Science, software engineering and random subjects So i will be touching in multiple subjects throughout my journey and will be publishing all of my articles here! Welcome!
-

@@ -1,0 +1,14 @@
+{
+  "spellcheck": true,
+  "vimMode": true,
+  "promptDelete": false,
+  "pdfExportSettings": {
+    "pageSize": "Letter",
+    "landscape": false,
+    "margin": "0",
+    "downscalePercent": 100
+  },
+  "attachmentFolderPath": "./",
+  "alwaysUpdateLinks": true,
+  "newLinkFormat": "absolute"
+}

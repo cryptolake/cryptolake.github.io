@@ -8,10 +8,10 @@ Hey there! , My name is Dhia and i'm an aspiring Data Scientist and a forever st
 - Github: [cryptolake](https://github.com/cryptolake)
 - LinkedIn: [Dhia Dahmeni](https://www.linkedin.com/in/dhia-dahmeni-577a42216/)
 
-### Projects
+### Projects:
 - [[Articles/Car Detector]]: car detector my final year project with my team
 
-### Machine learning
+### Machine learning:
 - [[Articles/Activation]]: Activation Functions
 
 - [[Articles/Optimization]]: Optimization methods
@@ -22,7 +22,11 @@ Hey there! , My name is Dhia and i'm an aspiring Data Scientist and a forever st
 
 - [[Articles/My transfer learning experiment]]: Transfer learning experiment
 
-### C programming
+- [[notes/Machine learning/Computer vision/computer vision]]: My computer vision notes
+
+- [[notes/Machine learning/Structure Of a machine learning project/Orthogonalization]]
+
+### C programming:
 - [[Articles/C compilation under the hood]]
 
 - [[Articles/C static libraries]]
@@ -32,6 +36,13 @@ Hey there! , My name is Dhia and i'm an aspiring Data Scientist and a forever st
 - [[Articles/Static Libraries vs Dynamic Libraries in C]]
 
 - [[Articles/What Happens When you Type “ls -l *.c” in the shell]]
+
+### Mathematics:
+- [[Mathematics/Porbability/Unit 1 Probability Models and Axioms]]
+
+- [[notes/Mathematics/Porbability/Unit 4 Discrete random variables]]
+
+- [[notes/Mathematics/Sets, sequences and series]]
 
 
 ## What is this:

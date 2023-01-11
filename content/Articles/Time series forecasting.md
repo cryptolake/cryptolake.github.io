@@ -1287,7 +1287,6 @@ plt.scatter([24], pred)
 ```
 
 ![png](Articles/output_69_1.png)
-    
 
 
 # Conclusion

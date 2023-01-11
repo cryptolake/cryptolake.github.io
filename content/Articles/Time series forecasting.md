@@ -1265,8 +1265,6 @@ plt.scatter([24], pred)
 ```
 
 ![png](Articles/output_67_1.png)
-    
-
 
 
 ```python

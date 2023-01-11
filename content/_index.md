@@ -12,6 +12,9 @@ Hey there! , My name is Dhia and i'm an aspiring Software Engineer/ML Engineer a
 - [[Articles/Car Detector]]: car detector my final year project with my team
 
 ### Machine learning:
+
+- [[Articles/Time series forecasting]]: My experiment forecasting bitcoin
+
 - [[Articles/Activation]]: Activation Functions
 
 - [[Articles/Optimization]]: Optimization methods

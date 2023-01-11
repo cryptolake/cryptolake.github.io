@@ -417,7 +417,7 @@ plt.show()
 
 
     
-![png](output_17_0.png)
+![png](./output_17_0.png)
     
 
 
@@ -435,7 +435,7 @@ plt.plot(dfc['Timestamp'], dfc['Close'])
 
 
     
-![png](output_18_1.png)
+![png](./output_18_1.png)
     
 
 
@@ -457,7 +457,7 @@ plt.scatter(dfc['Timestamp'], dfc['Volume_(BTC)'])
 
 
     
-![png](output_20_1.png)
+![png](./output_20_1.png)
     
 
 
@@ -475,7 +475,7 @@ plt.scatter(dfc['Timestamp'], (dfc['Volume_(BTC)']-dfc['Volume_(BTC)'].mean())/d
 
 
     
-![png](output_21_1.png)
+![png](./output_21_1.png)
     
 
 
@@ -501,7 +501,7 @@ dfc.hist()
 
 
     
-![png](output_22_1.png)
+![png](./output_22_1.png)
     
 
 
@@ -700,7 +700,7 @@ plt.plot(dfb['Timestamp'], dfb['Close'])
 
 
     
-![png](output_28_1.png)
+![png](./output_28_1.png)
     
 
 
@@ -731,7 +731,7 @@ plt.plot(sdfb['Timestamp'], sdfb['Close'])
 
 
     
-![png](output_32_1.png)
+![png](./output_32_1.png)
     
 
 
@@ -749,7 +749,7 @@ plt.plot(sdfb['Timestamp'], norm(sdfb['Close']))
 
 
     
-![png](output_33_1.png)
+![png](./output_33_1.png)
     
 
 
@@ -767,7 +767,7 @@ plt.scatter(sdfb['Timestamp'], sdfb['Volume_(BTC)'])
 
 
     
-![png](output_34_1.png)
+![png](./output_34_1.png)
     
 
 
@@ -785,7 +785,7 @@ plt.scatter(sdfb['Timestamp'], norm(sdfb['Volume_(BTC)']))
 
 
     
-![png](output_35_1.png)
+![png](./output_35_1.png)
     
 
 
@@ -803,7 +803,7 @@ plt.scatter(sdfb['Timestamp'], sdfb['Volume_(Currency)'])
 
 
     
-![png](output_36_1.png)
+![png](./output_36_1.png)
     
 
 
@@ -821,7 +821,7 @@ plt.scatter(sdfb['Timestamp'], norm(sdfb['Volume_(Currency)']))
 
 
     
-![png](output_37_1.png)
+![png](./output_37_1.png)
     
 
 
@@ -1188,7 +1188,7 @@ df.hist()
 
 
     
-![png](output_47_1.png)
+![png](./output_47_1.png)
     
 
 
@@ -1229,7 +1229,7 @@ _ = ax.set_xticklabels(df.keys(), rotation=90)
 
 
     
-![png](output_51_0.png)
+![png](./output_51_0.png)
     
 
 
@@ -1413,7 +1413,7 @@ plt.scatter([24], pred)
 
 
     
-![png](output_67_1.png)
+![png](./output_67_1.png)
     
 
 
@@ -1434,7 +1434,7 @@ plt.scatter([24], pred)
 
 
     
-![png](output_68_1.png)
+![png](./output_68_1.png)
     
 
 
@@ -1455,7 +1455,7 @@ plt.scatter([24], pred)
 
 
     
-![png](output_69_1.png)
+![png](./output_69_1.png)
     
 
 

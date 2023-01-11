@@ -31,15 +31,6 @@ import seaborn as sns
 import tensorflow as tf
 ```
 
-    2023-01-11 14:36:48.877138: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 FMA
-    To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
-    2023-01-11 14:36:48.991064: W tensorflow/compiler/xla/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcudart.so.11.0'; dlerror: libcudart.so.11.0: cannot open shared object file: No such file or directory
-    2023-01-11 14:36:48.991082: I tensorflow/compiler/xla/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.
-    2023-01-11 14:36:49.802808: W tensorflow/compiler/xla/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libnvinfer.so.7'; dlerror: libnvinfer.so.7: cannot open shared object file: No such file or directory
-    2023-01-11 14:36:49.802931: W tensorflow/compiler/xla/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libnvinfer_plugin.so.7'; dlerror: libnvinfer_plugin.so.7: cannot open shared object file: No such file or directory
-    2023-01-11 14:36:49.802940: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Cannot dlopen some TensorRT libraries. If you would like to use Nvidia GPU with TensorRT, please make sure the missing libraries mentioned above are installed properly.
-
-
 # EDA
 
 We start by exploring our data, in this project we have two csv files one from bitstamp and the other from coinbase,
@@ -416,9 +407,7 @@ plt.show()
 ```
 
 
-    
-![png](./output_17_0.png)
-    
+![png](Articles/output_17_0.png)
 
 
 
@@ -427,16 +416,7 @@ plt.plot(dfc['Timestamp'], dfc['Close'])
 ```
 
 
-
-
-    [<matplotlib.lines.Line2D at 0x7f6933764700>]
-
-
-
-
-    
-![png](./output_18_1.png)
-    
+![png](Articles/output_18_1.png)
 
 
 ### Normalization
@@ -449,17 +429,7 @@ plt.scatter(dfc['Timestamp'], dfc['Volume_(BTC)'])
 ```
 
 
-
-
-    <matplotlib.collections.PathCollection at 0x7f6933a64ac0>
-
-
-
-
-    
-![png](./output_20_1.png)
-    
-
+![png](Articles/output_20_1.png)
 
 
 ```python
@@ -467,16 +437,7 @@ plt.scatter(dfc['Timestamp'], (dfc['Volume_(BTC)']-dfc['Volume_(BTC)'].mean())/d
 ```
 
 
-
-
-    <matplotlib.collections.PathCollection at 0x7f69333c2f10>
-
-
-
-
-    
-![png](./output_21_1.png)
-    
+![png](Articles/output_21_1.png)
 
 
 
@@ -485,23 +446,7 @@ dfc.hist()
 ```
 
 
-
-
-    array([[<AxesSubplot: title={'center': 'Timestamp'}>,
-            <AxesSubplot: title={'center': 'Open'}>,
-            <AxesSubplot: title={'center': 'High'}>],
-           [<AxesSubplot: title={'center': 'Low'}>,
-            <AxesSubplot: title={'center': 'Close'}>,
-            <AxesSubplot: title={'center': 'Volume_(BTC)'}>],
-           [<AxesSubplot: title={'center': 'Volume_(Currency)'}>,
-            <AxesSubplot: title={'center': 'Weighted_Price'}>,
-            <AxesSubplot: >]], dtype=object)
-
-
-
-
-    
-![png](./output_22_1.png)
+![png](Articles/output_22_1.png)
     
 
 
@@ -693,16 +638,7 @@ plt.plot(dfb['Timestamp'], dfb['Close'])
 
 
 
-
-    [<matplotlib.lines.Line2D at 0x7f6932b2b400>]
-
-
-
-
-    
-![png](./output_28_1.png)
-    
-
+![png](Articles/output_28_1.png)
 
 
 ```python
@@ -723,17 +659,7 @@ plt.plot(sdfb['Timestamp'], sdfb['Close'])
 ```
 
 
-
-
-    [<matplotlib.lines.Line2D at 0x7f6932aadb80>]
-
-
-
-
-    
-![png](./output_32_1.png)
-    
-
+![png](Articles/output_32_1.png)
 
 
 ```python
@@ -741,51 +667,20 @@ plt.plot(sdfb['Timestamp'], norm(sdfb['Close']))
 ```
 
 
-
-
-    [<matplotlib.lines.Line2D at 0x7f69327e78b0>]
-
-
-
-
-    
-![png](./output_33_1.png)
-    
-
-
+![png](Articles/output_33_1.png)
 
 ```python
 plt.scatter(sdfb['Timestamp'], sdfb['Volume_(BTC)'])
 ```
 
-
-
-
-    <matplotlib.collections.PathCollection at 0x7f6932765220>
-
-
-
-
-    
-![png](./output_34_1.png)
-    
-
+![png](Articles/output_34_1.png)
 
 
 ```python
 plt.scatter(sdfb['Timestamp'], norm(sdfb['Volume_(BTC)']))
 ```
 
-
-
-
-    <matplotlib.collections.PathCollection at 0x7f69326d5a00>
-
-
-
-
-    
-![png](./output_35_1.png)
+![png](Articles/output_35_1.png)
     
 
 
@@ -795,16 +690,7 @@ plt.scatter(sdfb['Timestamp'], sdfb['Volume_(Currency)'])
 ```
 
 
-
-
-    <matplotlib.collections.PathCollection at 0x7f6932651640>
-
-
-
-
-    
-![png](./output_36_1.png)
-    
+![png](Articles/output_36_1.png)
 
 
 
@@ -814,15 +700,7 @@ plt.scatter(sdfb['Timestamp'], norm(sdfb['Volume_(Currency)']))
 
 
 
-
-    <matplotlib.collections.PathCollection at 0x7f693238f6d0>
-
-
-
-
-    
-![png](./output_37_1.png)
-    
+![png](Articles/output_37_1.png)
 
 
 Applying feature selection on the new data
@@ -1178,17 +1056,7 @@ df = df.groupby(np.arange(len(df))//60).mean()
 df.hist()
 ```
 
-
-
-
-    array([[<AxesSubplot: title={'center': 'Close'}>,
-            <AxesSubplot: title={'center': 'Volume_(BTC)'}>]], dtype=object)
-
-
-
-
-    
-![png](./output_47_1.png)
+![png](Articles/output_47_1.png)
     
 
 
@@ -1227,9 +1095,7 @@ ax = sns.violinplot(x='Column', y='Normalized', data=df_std)
 _ = ax.set_xticklabels(df.keys(), rotation=90)
 ```
 
-
-    
-![png](./output_51_0.png)
+![png](Articles/output_51_0.png)
     
 
 
@@ -1381,15 +1247,9 @@ predictions = lstm_model.predict(example)
 predictions
 ```
 
-
-
-
     array([[0.45651057],
            [0.64009064],
            [0.6150275 ]], dtype=float32)
-
-
-
 
 ```python
 def unormalize_res(df):
@@ -1404,16 +1264,7 @@ plt.scatter(list(range(25)), exp)
 plt.scatter([24], pred)
 ```
 
-
-
-
-    <matplotlib.collections.PathCollection at 0x7f68c0442460>
-
-
-
-
-    
-![png](./output_67_1.png)
+![png](Articles/output_67_1.png)
     
 
 
@@ -1425,18 +1276,7 @@ plt.scatter(list(range(25)), exp)
 plt.scatter([24], pred)
 ```
 
-
-
-
-    <matplotlib.collections.PathCollection at 0x7f68c02d2310>
-
-
-
-
-    
-![png](./output_68_1.png)
-    
-
+![png](Articles/output_68_1.png)
 
 
 ```python
@@ -1446,16 +1286,7 @@ plt.scatter(list(range(25)), exp)
 plt.scatter([24], pred)
 ```
 
-
-
-
-    <matplotlib.collections.PathCollection at 0x7f68c02b5fa0>
-
-
-
-
-    
-![png](./output_69_1.png)
+![png](Articles/output_69_1.png)
     
 
 

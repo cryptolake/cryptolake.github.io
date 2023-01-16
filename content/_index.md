@@ -41,7 +41,7 @@ Hey there! , My name is Dhia and i'm an aspiring Software Engineer/ML Engineer a
 - [[Articles/What Happens When you Type “ls -l *.c” in the shell]]
 
 ### Mathematics:
-- [[Mathematics/Porbability/Unit 1 Probability Models and Axioms]]
+- [[notes/Mathematics/Porbability/Unit 1 Probability Models and Axioms]]
 
 - [[notes/Mathematics/Porbability/Unit 4 Discrete random variables]]
 

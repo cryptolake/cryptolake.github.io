@@ -1,6 +1,6 @@
 # Regularization in Machine learning
 
-![[Articles/Pasted image 20221003132154.png]]
+![[images/Pasted image 20221003132154.png]]
 
 ## What is Regularization?
 One of the biggest aspects in training machine learning models is avoiding over-fitting,
@@ -11,32 +11,32 @@ it happens when our model aggressively fits to the training data which translate
 - Early Stopping
 
 ## L1 & L2 regularization
-![[Articles/Pasted image 20221003142855.png]]
+![[images/Pasted image 20221003142855.png]]
 
 
 L1 and L2 regularization or LASSO and Ridge regression are regularization methods in which we focus on weight by reducing their values, this is why in fact they are also called weight decay, this introduces a kind of penalty system for weights to sort of "punish" high weight values and eliminate very low ones thus reducing over-fitting. Let's break down this intuition!
 Let's take the example of linear regression
 
-![[Articles/Pasted image 20221003174635.png]]
+![[images/Pasted image 20221003174635.png]]
 
 
 as we can see for linear regression we use w(weight) for the slope of the function and b will represent intercept, linear regression looks to optimizing w and b such that i minimizes the cost function below (least square):
 
-![[Articles/Pasted image 20221003175037.png]]
+![[images/Pasted image 20221003175037.png]]
 
 In L2 regularization the cost function is altered by adding a penalty equivalent to square of the coefficients (w) times a new hyper-parameter lambda that controls the *magnitude* of the regularization effect the more $\lambda \rightarrow 0$ the more the effect is minimized.
 
-![[Articles/Pasted image 20221003175516.png]]
+![[images/Pasted image 20221003175516.png]]
 
 For L1 regularization the cost function is altered by adding a penalty in form of the absolute value of the coefficient or the norm (if we are dealing with vectors), like L1 we also have the hyper-parameter lambda that controls the regularization effect.
 
-![[Articles/Pasted image 20221003180511.png]]
+![[images/Pasted image 20221003180511.png]]
 
 The difference between the two methods is that L2 regularization shrinks the less important features to zero thus it produces a feature selection effect by zeroing unimportant features.
 
 ## Dropout
 
-![[Articles/Pasted image 20221003182000.png]]
+![[images/Pasted image 20221003182000.png]]
 
 Dropout is my favorite regularization technique by how simple it is, It basically disables neurons randomly during training so that we avoid over-fitting, in testing this method researchers found out that it's very effective in handling over-fitting.
 
@@ -44,7 +44,7 @@ It also introduces another hyper-parameter *Drop rate (P)* that represents the p
 
 ## Data Augmentation
 
-![[Articles/Pasted image 20221003182809.png]]
+![[images/Pasted image 20221003182809.png]]
 
 Data Augmentation is one of the most used regularization and it is becoming it is own discipline.
 
@@ -54,7 +54,7 @@ These methods are widely used especially in the field of computer vision where d
 
 ## Early Stopping
 
-![[Articles/Pasted image 20221003183328.png]]
+![[images/Pasted image 20221003183328.png]]
 
 Early stopping a callback during training that seeks to automate the practice of stopping the training process when further training will only lead to over-fitting.
 

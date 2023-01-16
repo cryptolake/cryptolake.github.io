@@ -1,6 +1,6 @@
 # Summary of the AlexNet paper: one of the most influential papers in computer vision
 
-![[Articles/Pasted image 20221004205115.png]]
+![[images/Pasted image 20221004205115.png]]
 
 ## Introduction:
 
@@ -14,7 +14,7 @@ The purpose of alexnet was clear from the paper, they trained one of the largest
 
 ### The Data:
 
-![[Articles/Pasted image 20221004210055.png]]
+![[images/Pasted image 20221004210055.png]]
 
 For the dataset the team used imagenet, it has variable length high-resolution images for which they needed to down-scale down to 256x256, first given the rectangular nature of the image they scaled down so that the shorter side is 256 and then cropped the center of the image with the appropriate dimension and for the RGB values they subtracted the mean of the values of the training set.
 
@@ -28,11 +28,11 @@ For alexnet the researchers used two methods of augmentation, both of which used
 
 ### Architecture:
 
-![[Articles/Pasted image 20221004213536.png]]
+![[images/Pasted image 20221004213536.png]]
 
 The architecture of alexnet is as follows, it consists of eight learned layers, five convolutional ones, and three fully connected. the researchers opted for the ReLU activation when at the time was not standard instead of Tanh, with the following figure to show the superiority of the non-linearity.
 
-![[Articles/Pasted image 20221004213854.png]]
+![[images/Pasted image 20221004213854.png]]
 
 The dashed line being tanh and the continuous one is ReLU, the function is also several times faster in CNNs.
 
@@ -40,13 +40,13 @@ The researchers also employed Multi-GPU for the fact that they share memory, the
 
 They used LRN (local response normalization) which is a type of non trainable normalization layer done after activation that aids the network in generalization it's similar to an effect observed in real neurons lateral inhibition, which creates a sort of competition between neurons, in the paper it's used across channels with the following formula,
 
-![[Articles/Pasted image 20221004220938.png]]
+![[images/Pasted image 20221004220938.png]]
 
 
 In the paper they also used dropout which was a recently introduced technique at the time but it had a significant impact on reducing over-fitting, the author of the papers saw the method as training a slightly different architecture each time which was a really novel way to see this technique for me.
 
 ### Initialization and Training:
-![[Articles/Pasted image 20221005165847.png]]
+![[images/Pasted image 20221005165847.png]]
 
 The weights where initialized from a zero mean Gaussian distribution with standard deviation of 0.01.
 
@@ -56,7 +56,7 @@ The learning rate was initialized at 0.01 and was adjusted manually throughout t
 
 ## Results:
 
-![[Articles/Pasted image 20221004222548.png]]
+![[images/Pasted image 20221004222548.png]]
 
 these are some of the results shown in the paper:
 
@@ -66,7 +66,7 @@ For the imagenet competition submission the authors received a top-1 score (whic
 
 ## Conclusion and personal notes:
 
-![[Articles/Pasted image 20221005164435.png]]
+![[images/Pasted image 20221005164435.png]]
 
 The results obtained in the study indicate that large, and deep convolutional neural networks have immense potential into the field of computer vision.
 

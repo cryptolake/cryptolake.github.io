@@ -407,7 +407,7 @@ plt.show()
 ```
 
 
-![png](Articles/output_17_0.png)
+![png](images/output_17_0.png)
 
 
 
@@ -416,7 +416,7 @@ plt.plot(dfc['Timestamp'], dfc['Close'])
 ```
 
 
-![png](Articles/output_18_1.png)
+![png](images/output_18_1.png)
 
 
 ### Normalization
@@ -429,7 +429,7 @@ plt.scatter(dfc['Timestamp'], dfc['Volume_(BTC)'])
 ```
 
 
-![png](Articles/output_20_1.png)
+![png](images/output_20_1.png)
 
 
 ```python
@@ -437,7 +437,7 @@ plt.scatter(dfc['Timestamp'], (dfc['Volume_(BTC)']-dfc['Volume_(BTC)'].mean())/d
 ```
 
 
-![png](Articles/output_21_1.png)
+![png](images/output_21_1.png)
 
 
 
@@ -446,7 +446,7 @@ dfc.hist()
 ```
 
 
-![png](Articles/output_22_1.png)
+![png](images/output_22_1.png)
     
 
 
@@ -638,7 +638,7 @@ plt.plot(dfb['Timestamp'], dfb['Close'])
 
 
 
-![png](Articles/output_28_1.png)
+![png](images/output_28_1.png)
 
 
 ```python
@@ -659,7 +659,7 @@ plt.plot(sdfb['Timestamp'], sdfb['Close'])
 ```
 
 
-![png](Articles/output_32_1.png)
+![png](images/output_32_1.png)
 
 
 ```python
@@ -667,20 +667,20 @@ plt.plot(sdfb['Timestamp'], norm(sdfb['Close']))
 ```
 
 
-![png](Articles/output_33_1.png)
+![png](images/output_33_1.png)
 
 ```python
 plt.scatter(sdfb['Timestamp'], sdfb['Volume_(BTC)'])
 ```
 
-![png](Articles/output_34_1.png)
+![png](images/output_34_1.png)
 
 
 ```python
 plt.scatter(sdfb['Timestamp'], norm(sdfb['Volume_(BTC)']))
 ```
 
-![png](Articles/output_35_1.png)
+![png](images/output_35_1.png)
     
 
 
@@ -690,7 +690,7 @@ plt.scatter(sdfb['Timestamp'], sdfb['Volume_(Currency)'])
 ```
 
 
-![png](Articles/output_36_1.png)
+![png](images/output_36_1.png)
 
 
 
@@ -700,7 +700,7 @@ plt.scatter(sdfb['Timestamp'], norm(sdfb['Volume_(Currency)']))
 
 
 
-![png](Articles/output_37_1.png)
+![png](images/output_37_1.png)
 
 
 Applying feature selection on the new data
@@ -1056,7 +1056,7 @@ df = df.groupby(np.arange(len(df))//60).mean()
 df.hist()
 ```
 
-![png](Articles/output_47_1.png)
+![png](images/output_47_1.png)
     
 
 
@@ -1095,7 +1095,7 @@ ax = sns.violinplot(x='Column', y='Normalized', data=df_std)
 _ = ax.set_xticklabels(df.keys(), rotation=90)
 ```
 
-![png](Articles/output_51_0.png)
+![png](images/output_51_0.png)
     
 
 
@@ -1264,7 +1264,7 @@ plt.scatter(list(range(25)), exp)
 plt.scatter([24], pred)
 ```
 
-![png](Articles/output_67_1.png)
+![png](images/output_67_1.png)
 
 
 ```python
@@ -1274,7 +1274,7 @@ plt.scatter(list(range(25)), exp)
 plt.scatter([24], pred)
 ```
 
-![png](Articles/output_68_1.png)
+![png](images/output_68_1.png)
 
 
 ```python
@@ -1284,7 +1284,7 @@ plt.scatter(list(range(25)), exp)
 plt.scatter([24], pred)
 ```
 
-![png](Articles/output_69_1.png)
+![png](images/output_69_1.png)
 
 
 # Conclusion

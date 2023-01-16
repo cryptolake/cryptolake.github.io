@@ -1,6 +1,6 @@
 # Transfer learning experiment: ResNet with CIFAR-10 
 
-![[Articles/Pasted image 20221011220803.png]]
+![[images/Pasted image 20221011220803.png]]
 ## Abstract:
 
 Using transfer learning, i trained a ResNet-50 with weights from the imagenet competition to the CIFAR-10 which has 10 classes only as opposed to the 1000 classes in the competition, the result was a Top-1 accuracy of 90%.
@@ -116,11 +116,11 @@ this process is called fine-tuning.
 
 From my testing doing this *really* helped the model performance and i think this is because the model  is readjusting the weights for a new problem domain, and from my testing 2 epochs of fine-tuning were optimal.
 
-![[Articles/unfrozenm.png]]
+![[images/unfrozenm.png]]
 
 after the initial fine tuning i froze the base model and only trained the last added layer which pushed the accuracy further, with this the training is done.
 
-![[Articles/frorzenm.png]]
+![[images/frorzenm.png]]
 
 #### Important:
 This method was not recommended by the keras/tensorflow[5] tutorial instead they recommend doing fine-tuning after training frozen layers, this is because in the tutorial they didn't use the top layer of the base model and added their own layers on top of the model.
@@ -130,7 +130,7 @@ This method was not recommended by the keras/tensorflow[5] tutorial instead they
 
 With this approach i got an accuracy of 90% on the validation dataset and 92% accuracy in the training dataset, from my observation this can be further improved by performing fine-tuning again but i didn't experiment with this.
 
-![[Articles/trainingf.png]]
+![[images/trainingf.png]]
 
 ## Citations:
 - [[1]: keras applications](https://keras.io/api/applications/) 

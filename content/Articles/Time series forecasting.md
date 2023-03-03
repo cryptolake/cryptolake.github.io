@@ -33,8 +33,7 @@ import tensorflow as tf
 
 # EDA
 
-We start by exploring our data, in this project we have two csv files one from bitstamp and the other from coinbase,
-first thing we first we load the coinbase csv using pandas.
+We start by exploring our data, in this project we have two csv files one from bitstamp and the other from coinbase, first thing first, we load the coinbase csv using pandas.
 
 
 ```python
@@ -240,7 +239,7 @@ df.isnull().sum()
 
 ### Missing values
 
-We notice that that we have null values in come rows so we use the fillna method from pandas bfill strategy(filling by previous value) i've used it because our missing data is at the start.
+We notice that that we have null values in some rows, we use the fillna method from pandas with the bfill strategy (filling by previous value). i've used it because our missing data is at the start.
 
 
 ```python
@@ -269,7 +268,8 @@ dfc.isnull().sum()
 
 ### Feature Selection
 
-We notice that we have 4 columns that describe the price and 2 columns for the volum of coin, but do we need that many? As we can see the correlation between the price features is very high this indicates that we don't need only the closing price.
+We notice that we have 4 columns that describe the price and 2 columns for the volume of coin, but do we need that many? 
+As we can see, the correlation between the price features is very high this indicates that we need only the closing price.
 
 
 ```python
@@ -390,7 +390,7 @@ plt.rcParams["figure.figsize"] = [7.50, 3.50]
 plt.rcParams["figure.autolayout"] = True
 ```
 
-As we can see all the graphs for the prices correlate visually as well
+As we can see in all the features of the price correlate visually as well.
 
 
 ```python
@@ -447,10 +447,9 @@ dfc.hist()
 
 
 ![png](images/output_22_1.png)
-    
 
 
-Here we imported the bitstamp data and found that it has the the same range with more values we will apply the same techniques and use this data instead
+Here we imported the bitstamp data and found that it has the the same range with more values, so we will apply the same techniques and use this data instead
 
 
 ```python
@@ -1101,7 +1100,7 @@ _ = ax.set_xticklabels(df.keys(), rotation=90)
 
 ## Making dataset
 
-Tensorflow offer a very convinient api for datasets we have a keras method to easily create a tf.data.dataset specifically for time series data with shape (batches, batch_size, sequence_length, features) after that we apply a window over the data which would split the sequence into a tuple of two sequences first element represents the past 24 hours and the other one represents the label or the next our.
+Tensorflow offers a very convenient api for datasets, we have a keras method to easily create a `tf.data.dataset` specifically for time series data with shape `(batches, batch_size, sequence_length, features)` after that we apply a window over the data which would split the sequence into a tuple of two sequences first element represents the past 24 hours and the other one represents the label or the next our.
 
 
 ```python
@@ -1151,7 +1150,7 @@ test_dataset.save('./datasets/test')
 
 # Modeling,Training and Evaluation
 
-For modeling we will be using tensorflow keras, but first we need to create a tensorflow.data.dataset object for our RNN to consume, we also perform splitting on the dataset to make it into a tuple of (inputs, prediction) with the input being 24 time sequences (24 hours) and prediction being 1 time sequence (1 hour).
+For modeling we will be using tensorflow keras, but first we need to create a `tensorflow.data.dataset` object for our RNN to consume, we also perform splitting on the dataset to make it into a tuple of (inputs, prediction) with the input being 24 time sequences (24 hours) and prediction being 1 time sequence (1 hour).
 
 
 ```python
@@ -1186,46 +1185,12 @@ As we can see early stopping stopped the training when it converged
 compile_and_fit(lstm_model, train_dataset, val_dataset)
 ```
 
-    Epoch 1/20
-    532/532 [==============================] - 8s 12ms/step - loss: 0.1017 - mean_absolute_error: 0.1463 - val_loss: 0.0140 - val_mean_absolute_error: 0.0674
-    Epoch 2/20
-    532/532 [==============================] - 6s 10ms/step - loss: 0.0434 - mean_absolute_error: 0.0883 - val_loss: 0.0122 - val_mean_absolute_error: 0.0646
-    Epoch 3/20
-    532/532 [==============================] - 6s 11ms/step - loss: 0.0426 - mean_absolute_error: 0.0872 - val_loss: 0.0094 - val_mean_absolute_error: 0.0546
-    Epoch 4/20
-    532/532 [==============================] - 6s 11ms/step - loss: 0.0328 - mean_absolute_error: 0.0758 - val_loss: 0.0060 - val_mean_absolute_error: 0.0443
-    Epoch 5/20
-    532/532 [==============================] - 6s 11ms/step - loss: 0.0244 - mean_absolute_error: 0.0668 - val_loss: 0.0056 - val_mean_absolute_error: 0.0410
-    Epoch 6/20
-    532/532 [==============================] - 6s 11ms/step - loss: 0.0202 - mean_absolute_error: 0.0602 - val_loss: 0.0047 - val_mean_absolute_error: 0.0383
-    Epoch 7/20
-    532/532 [==============================] - 6s 11ms/step - loss: 0.0165 - mean_absolute_error: 0.0541 - val_loss: 0.0040 - val_mean_absolute_error: 0.0342
-    Epoch 8/20
-    532/532 [==============================] - 6s 11ms/step - loss: 0.0136 - mean_absolute_error: 0.0492 - val_loss: 0.0034 - val_mean_absolute_error: 0.0316
-    Epoch 9/20
-    532/532 [==============================] - 6s 11ms/step - loss: 0.0110 - mean_absolute_error: 0.0448 - val_loss: 0.0028 - val_mean_absolute_error: 0.0280
-    Epoch 10/20
-    532/532 [==============================] - 6s 11ms/step - loss: 0.0087 - mean_absolute_error: 0.0403 - val_loss: 0.0020 - val_mean_absolute_error: 0.0236
-    Epoch 11/20
-    532/532 [==============================] - 6s 11ms/step - loss: 0.0068 - mean_absolute_error: 0.0368 - val_loss: 0.0018 - val_mean_absolute_error: 0.0219
-    Epoch 12/20
-    532/532 [==============================] - 6s 11ms/step - loss: 0.0056 - mean_absolute_error: 0.0341 - val_loss: 0.0015 - val_mean_absolute_error: 0.0204
-    Epoch 13/20
-    532/532 [==============================] - 6s 11ms/step - loss: 0.0043 - mean_absolute_error: 0.0304 - val_loss: 0.0013 - val_mean_absolute_error: 0.0186
-    Epoch 14/20
-    532/532 [==============================] - 6s 11ms/step - loss: 0.0033 - mean_absolute_error: 0.0276 - val_loss: 0.0012 - val_mean_absolute_error: 0.0178
-    Epoch 15/20
-    532/532 [==============================] - 6s 11ms/step - loss: 0.0025 - mean_absolute_error: 0.0250 - val_loss: 0.0011 - val_mean_absolute_error: 0.0171
-    Epoch 16/20
-    532/532 [==============================] - 6s 11ms/step - loss: 0.0019 - mean_absolute_error: 0.0226 - val_loss: 0.0011 - val_mean_absolute_error: 0.0175
     Epoch 17/20
     532/532 [==============================] - 6s 11ms/step - loss: 0.0018 - mean_absolute_error: 0.0221 - val_loss: 0.0013 - val_mean_absolute_error: 0.0193
 
-
 ## Evaluation
 
-We will visually evaluate the mode by plotting some examples and their predictions.
-
+We will visually evaluate the model by plotting some examples and their predictions.
 
 ```python
 example_window = tf.stack([np.array(test_df[:25]),

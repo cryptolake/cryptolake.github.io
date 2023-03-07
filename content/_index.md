@@ -4,6 +4,7 @@
 Hey there! , My name is Dhia and i'm an aspiring Software Engineer/ML Engineer and a forever student, in a journey of self learning assisted through Holberton School, edx and coursera.
 
 ## Contacts:
+- CV: [[Dhia_Dahmeni_cv.pdf]]
 - Email: [dhiadah@gmail.com](https://mailto:dhiadah@gmail.com)
 - Github: [cryptolake](https://github.com/cryptolake)
 - LinkedIn: [Dhia Dahmeni](https://www.linkedin.com/in/dhia-dahmeni-577a42216/)

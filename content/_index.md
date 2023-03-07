@@ -14,6 +14,8 @@ Hey there! , My name is Dhia and i'm an aspiring Software Engineer/ML Engineer a
 
 ### Machine learning:
 
+- [[Articles/Hyperparameter Tuning With Bayesian Optimization]]: Hyperparameter Tuning
+
 - [[Articles/Time series forecasting]]: My experiment forecasting bitcoin
 
 - [[Articles/Activation]]: Activation Functions

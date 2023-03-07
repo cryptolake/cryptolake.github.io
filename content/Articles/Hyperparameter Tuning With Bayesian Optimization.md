@@ -22,7 +22,7 @@ As we can see GP are extremely powerful but there's assumptions we need to have 
 As the name suggests we use bayes theorem: we update our prior belief (prior) with it's likelihood and the new evidence to obtain our new belief (Posterior), and as you might have
 figured out we use Gaussian processes! 
 
-![[Pasted image 20230307193149.png]]
+![[images/Pasted image 20230307193149.png]]
 
 In bayesian optimization we seek to build a representation of our function to get the maximum/minimum value of it, we of course model this function using GPs! but how do we determine which are the best points to sample to use our Gaussian process with?
 
@@ -34,7 +34,7 @@ after we find the next x, we sample it through our function and update the Gauss
 
 # Hyper Parameter tuning
 
-![[Pasted image 20230307205750.png]]
+![[images/Pasted image 20230307205750.png]]
 
 ## Model selection
 

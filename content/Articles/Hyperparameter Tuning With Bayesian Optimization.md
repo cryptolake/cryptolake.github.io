@@ -1,3 +1,4 @@
+# Hyperparameter Tuning With Bayesian Optimization
 
 First thing first we need to learn about the Gaussian processes and bayesian optimization.
 

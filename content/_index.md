@@ -10,6 +10,7 @@ Hey there! , My name is Dhia and i'm an aspiring Software Engineer/ML Engineer a
 - LinkedIn: [Dhia Dahmeni](https://www.linkedin.com/in/dhia-dahmeni-577a42216/)
 
 ### Projects:
+- [[Articles/Car Detector v2.0]]: Version 2.0 of car detector after studying ML
 - [[Articles/Car Detector]]: car detector my final year project with my team
 
 ### Machine learning:

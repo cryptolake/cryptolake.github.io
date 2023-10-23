@@ -10,9 +10,41 @@ Hey there! , My name is Dhia and i'm an aspiring Software Engineer/ML Engineer a
 - LinkedIn: [Dhia Dahmeni](https://www.linkedin.com/in/dhia-dahmeni-577a42216/)
 
 ### Projects:
-- [[Articles/Car Detector v2.0]]: Version 2.0 of car detector after studying ML
-- [[Articles/Car Detector]]: car detector my final year project with my team
-
+- [[Articles/Car Detector v2.0]] 
+	- A full rework of Car detector v1.0 
+	- Car extraction model based on Yolos enabling multiple cars in a picture and car/no car verification 
+	- A custom model based on pretrained Xresnet with tuned hyper-parameters 
+	- Advanced Data Cleaning
+	- Asynchronous API using FastApi 
+	- Full custom inference pipeline
+- [[Articles/Car Detector]]
+	- A car brand/model/year/color classifier
+	- A custom model based on pretrained resnet
+	- More than 20k+ images of cars scraped and labeled
+	- Full custom inference pipeline
+	- Deployment of model using docker on bare metal
+- [[Articles/Time series forecasting]]
+	- Full Custom RNN-LSTM model for predicting Bitcoin prices
+	- EDA walk-through and gathering insights from the the provided data
+- [QA BOT](https://github.com/cryptolake/holbertonschool-machine_learning/tree/master/supervised_learning/0x13-qa_bot)
+	- QA bot based on on a Bert
+	- Semantic search using FAISS index
+- [Breakout AI](https://github.com/cryptolake/holbertonschool-machine_learning/tree/master/reinforcement_learning/0x01-deep_q_learning)
+	- RL agent trained on custom deep Q network 
+	- Implementing Deepmind Q-learning paper
+- [Airbnb Clone](https://github.com/cryptolake/AirBnB_clone_v2)
+	- A full-stack Airbnb clone
+	- Base models for data and custom admin console
+	- Multiple storage implementation: json filesotorage or mysql db
+	- Unit testing
+- [Simple Shell](https://github.com/cryptolake/simple_shell)
+	- A simple Linux shell clone of /bin/sh without using standard lib
+	- Implementing cd, env, exit as custom commands
+- [Monty](https://github.com/cryptolake/monty)
+	- Implementing Monty byte-code interpreter
+	- Custom Queue implementation
+- [Custom Printf](https://github.com/cryptolake/printf)
+	- Custom Printf function from scratch
 ### Machine learning:
 
 - [[Articles/Hyperparameter Tuning With Bayesian Optimization]]: Hyperparameter Tuning

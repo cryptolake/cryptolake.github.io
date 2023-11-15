@@ -1,5 +1,7 @@
 # Car Detector v2.0: Let's focus on ML
 
+![[images/ex2.png]]
+
 # What is Car Detector v2.0?
 
 Car Detector 2.0 is successor to my end of year project with my team, this time i added the features that i didn't know how to implement with many improvement.
@@ -9,6 +11,7 @@ The first version had many problems:
 * no car extraction which means it input a whole picture so it couldn't do multiple car predictions and it won't
 distinguish between car and non car subjects
 
+![[images/ex1.png]]
 # Let's start with the tech
 
 Here's a breakdown of the tech used:
@@ -26,6 +29,9 @@ Overview of the new features developed:
 * smaller memory footprint
 
 # What made this challenging?
+
+![[images/ex3.png]]
+
 
 I had to understand my previous code and re-do most of it, this is one of the most common exercises
 done by software engineers, i redefined the class that handles the prediction and add dataclasses

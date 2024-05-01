@@ -1,5 +1,3 @@
-# This My Blog
-
 ## About me:
 Hey there! , My name is Dhia and i'm an aspiring Software Engineer/ML Engineer and a forever student, in a journey of self learning assisted through Holberton School, edx and coursera.
 

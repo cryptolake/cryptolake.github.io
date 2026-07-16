@@ -1,0 +1,144 @@
+{
+  "main": {
+    "id": "21413d00587e58ef",
+    "type": "split",
+    "children": [
+      {
+        "id": "b1d2eb8673666314",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "Machine learning/Computer vision/computer vision.md",
+            "mode": "source",
+            "source": false
+          }
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "9f8d931ed7e78c6c",
+    "type": "split",
+    "children": [
+      {
+        "id": "c4e375704c78bb5d",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "75f888e0b3ed925c",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "c6a4568f15868dbe",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "8d7c3798a221eb16",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "055ab825612ffe43",
+    "type": "split",
+    "children": [
+      {
+        "id": "6fc2c507ecfdea8f",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "3ad191dc1031a607",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Machine learning/Computer vision/computer vision.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "68bc7c2b85b9c473",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Machine learning/Computer vision/computer vision.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "8b0b53e149d3c042",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "1842a40092fb943d",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Machine learning/Computer vision/computer vision.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "active": "b1d2eb8673666314",
+  "lastOpenFiles": [
+    "Machine learning/Machine Learning.md",
+    "Statistics/Statistics.md",
+    "Mathematics/Sets, sequences and series.md",
+    "Mathematics/Porbability/Unit 1 Probability Models and Axioms.md",
+    "Mathematics/Porbability/Unit 4 Discrete random variables.md",
+    "Mathematics/Mathematics.md",
+    "2022-09-26.md",
+    "_index.md",
+    "Machine learning/ML Optimization and Regularization/Train, Dev and Test Sets.md",
+    "Machine learning.md"
+  ]
+}

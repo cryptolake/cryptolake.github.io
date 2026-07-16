@@ -26,7 +26,7 @@ After learning we started iterating first we had a beta with flask templates and
 
 # How It all Began
 
-Like All Tunisian youth i had an interest into cars, It was always a frequent subject into my conversations with friends, discussing the new BMW, If you had X amount of money which car would you buy etc.
+I've always been interested in cars. They were a frequent subject in conversations with friends: the new BMW, or which car you would buy with a given amount of money.
 
 One time We were riding home, Rayen was always the one driving (he’s the only one with a license) and we were talking about one of the cars on the street, then he brought up a game he used to play: He would guess the car on the street before seeing their branding, Right then a light bulb lit up above my head “Why don’t we make this our end of year project?”, All of our faces brighten up.
 

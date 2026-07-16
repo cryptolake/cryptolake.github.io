@@ -403,7 +403,7 @@ const selectedPages = config.selected
 
 const homeContent = `
   <section class="hero" aria-labelledby="hero-title">
-    <div class="hero-kicker mono-label">Software engineer / independent research / Tunis</div>
+    <div class="hero-kicker mono-label">Software engineer / independent research</div>
     <h1 id="hero-title">I build and study machine learning systems.</h1>
     <div class="hero-detail">
       <p class="hero-intro">My work covers computer vision, model training, inference runtimes and low-level software. This site has my project write-ups and study notes.</p>
@@ -433,7 +433,7 @@ const homeContent = `
       <h2 id="about-title">Dhia Dahmeni</h2>
     </div>
     <div class="about-copy">
-      <p>I'm a software engineer based in Tunis. I work on ML systems, computer vision, runtimes and developer tools.</p>
+      <p>I'm a software engineer. I work on ML systems, computer vision, runtimes and developer tools.</p>
       <p>I keep project write-ups and study notes here. Some are complete; some are not.</p>
       <div class="about-links">
         <a href="mailto:${config.email}">${config.email}</a>

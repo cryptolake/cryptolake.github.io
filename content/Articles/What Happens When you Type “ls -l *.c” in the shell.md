@@ -46,7 +46,7 @@ There are three types of commands: a builtin command like cd or exit, a full exe
 
 **_if_** it is an absolute path to an executable the program will fork creating a child process then executing the program with the parent process environment variable.
 
-**_Else if_** we test it and concatenate the program name with the directories inside the PATH environment variable and if the file is found the does the fork — execute procedure.
+**_Else if_** we test it and concatenate the program name with the directories inside the PATH environment variable and the file is found, it does the fork/execute procedure.
 
 **_Else_** it is not any of these it will print that it’s not found.
 

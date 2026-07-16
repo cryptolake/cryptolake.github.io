@@ -1,18 +1,27 @@
-# Quartz v4
+# Dhia Dahmeni: research notebook
 
-> “[One] who works with the door open gets all kinds of interruptions, but [they] also occasionally gets clues as to what the world is and what might be important.” — Richard Hamming
+A small, purpose-built static site for [dhia.xyz](https://dhia.xyz). It uses no framework, client JavaScript, Hugo, or Quartz.
 
-Quartz is a set of tools that helps you publish your [digital garden](https://jzhao.xyz/posts/networked-thought) and notes as a website for free.
-Quartz v4 features a from-the-ground rewrite focusing on end-user extensibility and ease-of-use.
+## Work locally
 
-🔗 Read the documentation and get started: https://quartz.jzhao.xyz/
+Requires Node.js 22 or newer.
 
-[Join the Discord Community](https://discord.gg/cRFFHYye7t)
+```sh
+npm install
+npm run dev
+```
 
-## Sponsors
+The development server builds the site and serves it at `http://127.0.0.1:4173`.
 
-<p align="center">
-  <a href="https://github.com/sponsors/jackyzha0">
-    <img src="https://cdn.jsdelivr.net/gh/jackyzha0/jackyzha0/sponsorkit/sponsors.svg" />
-  </a>
-</p>
+## Content
+
+- Long-form writing lives in `content/Articles/`.
+- Working notes live in `content/notes/`.
+- Profile details and selected work live in `site.config.json`.
+- The design lives in `styles/site.css`.
+
+Standard Markdown and Obsidian-style `[[wikilinks]]` and `![[embeds]]` are supported. The build writes the complete static site to `public/`.
+
+## Deploy
+
+Every push to `main` runs `.github/workflows/deploy.yaml`, builds and checks the site, then publishes `public/` to GitHub Pages. Pull requests run the same build and link checks without deploying.

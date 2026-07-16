@@ -1,0 +1,37 @@
+{
+  "name": "Dhia Dahmeni",
+  "shortName": "Dhia",
+  "description": "Dhia Dahmeni. Machine learning systems, computer vision, runtimes and low-level software.",
+  "url": "https://dhia.xyz",
+  "email": "dhiadah@gmail.com",
+  "github": "https://github.com/cryptolake",
+  "linkedin": "https://www.linkedin.com/in/dhia-dahmeni-577a42216/",
+  "cv": "/files/Dhia_Dahmeni_cv.pdf",
+  "focus": [
+    "Machine learning systems",
+    "Computer vision",
+    "Low-level computing"
+  ],
+  "selected": [
+    "Car Detector v2.0.md",
+    "Hyperparameter Tuning With Bayesian Optimization.md",
+    "Time series forecasting.md",
+    "C compilation under the hood.md"
+  ],
+  "descriptions": {
+    "Car Detector v2.0.md": "Vehicle extraction and classification with YOLOS, XResNet, FastAPI and a custom inference pipeline.",
+    "Car Detector.md": "Car make, model, year and color classification from a 20,000-image dataset.",
+    "Hyperparameter Tuning With Bayesian Optimization.md": "Gaussian processes and Bayesian optimization applied to hyperparameter search.",
+    "Time series forecasting.md": "An LSTM experiment on hourly Bitcoin prices, including data exploration and model evaluation.",
+    "C compilation under the hood.md": "C preprocessing, compilation, assembly and linking.",
+    "What Happens When you Type “ls -l *.c” in the shell.md": "Shell parsing, glob expansion, process creation and program execution.",
+    "Hard links vs Symbolic links, What’s the difference?.md": "How inodes and directory entries give hard and symbolic links different behavior.",
+    "C static libraries.md": "How static archives are built, indexed, linked, and used in C programs.",
+    "Static Libraries vs Dynamic Libraries in C.md": "Static and dynamic linking in C.",
+    "Activation.md": "Binary, linear, sigmoid, softmax, tanh and ReLU activation functions.",
+    "Optimization.md": "Feature scaling, mini-batches, batch normalization, momentum, RMSProp and Adam.",
+    "Regularization in ML.md": "L1, L2, dropout, data augmentation and early stopping.",
+    "Summary of the AlexNet paper.md": "Architecture notes from the AlexNet paper.",
+    "My transfer learning experiment.md": "Fine-tuning ResNet-50 on CIFAR-10."
+  }
+}

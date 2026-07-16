@@ -654,26 +654,6 @@ a:focus-visible {
   outline-offset: 5px;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    color-scheme: dark;
-    --paper: #111410;
-    --paper-raised: #181c17;
-    --ink: #edf0e9;
-    --ink-soft: #a9b0a5;
-    --line: #343a32;
-    --line-strong: #5b6458;
-    --signal: #80b896;
-    --signal-soft: #263a2e;
-    --code: #080a08;
-    --code-ink: #e8eee8;
-  }
-
-  .prose img {
-    opacity: 0.92;
-  }
-}
-
 @media (max-width: 820px) {
   :root {
     --shell: min(100% - 36px, 680px);

@@ -293,6 +293,12 @@ img {
   color: var(--signal);
 }
 
+.section-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+}
+
 .about .section-heading {
   grid-template-columns: minmax(180px, 0.65fr) minmax(300px, 2fr);
 }

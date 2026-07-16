@@ -1,13 +1,13 @@
-# Index
-This is the index of everything machine learning
+# Machine learning notes
 
-## ML Optimization and Regularization
-* [[Machine learning/ML Optimization and Regularization/Train, Dev and Test Sets]]
+## Optimization and regularization
 
-## Neural Networks
- - [[Machine learning/Neural Networks/Binary Classification]]
- - [[Machine learning/Neural Networks/Logistic Regression]]
- - [[Machine learning/Neural Networks/What is a Neural Network]]
+- [[Machine learning/ML Optimization and Regularization/Train, Dev and Test Sets]]
 
-## Structure Of a machine learning project
+## Computer vision
+
+- [[Machine learning/Computer vision/computer vision]]
+
+## Structure of a machine learning project
+
 - [[Machine learning/Structure Of a machine learning project/Orthogonalization]]

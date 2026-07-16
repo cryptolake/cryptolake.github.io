@@ -318,6 +318,7 @@ async function markdownToHtml(markdown) {
 function nav(active) {
   const items = [
     ["home", "/", "Index"],
+    ["projects", "/projects/", "Projects"],
     ["writing", "/writing/", "Research log"],
     ["notes", "/notes/", "Field notes"],
   ]
@@ -420,7 +421,10 @@ const homeContent = `
       <p>Longer pieces on computer vision, machine learning and systems programming.</p>
     </div>
     <div class="work-list">${selectedPages.map(workRow).join("")}</div>
-    <a class="text-link" href="/writing/">All articles <span aria-hidden="true">→</span></a>
+    <div class="section-actions">
+      <a class="text-link" href="/projects/">All projects <span aria-hidden="true">→</span></a>
+      <a class="text-link" href="/writing/">All articles <span aria-hidden="true">→</span></a>
+    </div>
   </section>
 
   <section class="about section-block" id="about" aria-labelledby="about-title">
@@ -463,6 +467,35 @@ function archivePage(title, eyebrow, intro, groupedPages, active) {
     route: active === "writing" ? "/writing/" : "/notes/",
     pageClass: "archive-page",
     content: `<header class="page-intro"><span class="mono-label">${eyebrow}</span><h1>${title}</h1><p>${intro}</p></header>${groups}`,
+  })
+}
+
+function projectRow(project) {
+  return `<a class="index-row" href="${escapeHtml(project.url)}" target="_blank" rel="noreferrer">
+    <div><span class="mono-label">${escapeHtml(project.area)} / GitHub</span><h2>${escapeHtml(project.name)}</h2></div>
+    <p>${escapeHtml(project.description)}</p>
+    <span class="index-arrow" aria-hidden="true">↗</span>
+  </a>`
+}
+
+function projectsPage(groupedProjects) {
+  const groups = Object.entries(groupedProjects)
+    .map(
+      ([group, projects], index) => `<section class="archive-group" aria-labelledby="project-group-${index}">
+        <div class="archive-label"><span class="mono-label">${String(index + 1).padStart(2, "0")}</span><h2 id="project-group-${index}">${escapeHtml(group)}</h2></div>
+        <div class="index-list">${projects.map(projectRow).join("")}</div>
+      </section>`,
+    )
+    .join("")
+
+  const intro = "Code for machine learning, systems programming and mathematics projects."
+  return layout({
+    title: "Projects",
+    description: intro,
+    active: "projects",
+    route: "/projects/",
+    pageClass: "archive-page projects-page",
+    content: `<header class="page-intro"><span class="mono-label">Source code / experiments</span><h1>Projects</h1><p>${intro}</p></header>${groups}`,
   })
 }
 
@@ -516,6 +549,9 @@ await writeFile(
     "notes",
   ),
 )
+
+await mkdir(path.dirname(outputPath("/projects/")), { recursive: true })
+await writeFile(outputPath("/projects/"), projectsPage(groupBy(config.projects, "area")))
 
 for (const page of pages) {
   if (!page.source.trim()) continue
@@ -591,7 +627,7 @@ await writeFile(
   `User-agent: *\nAllow: /\nSitemap: ${config.url}/sitemap.xml\n`,
 )
 
-const indexableRoutes = ["/", "/writing/", "/notes/", ...pages.filter((p) => p.source.trim()).map((p) => p.route)]
+const indexableRoutes = ["/", "/projects/", "/writing/", "/notes/", ...pages.filter((p) => p.source.trim()).map((p) => p.route)]
 await writeFile(
   path.join(publicDir, "sitemap.xml"),
   `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">${indexableRoutes
@@ -621,4 +657,4 @@ try {
   revision = execFileSync("git", ["rev-parse", "--short", "HEAD"], { cwd: root, encoding: "utf8" }).trim()
 } catch {}
 
-console.log(`Built ${pages.filter((page) => page.source.trim()).length + 3} pages from ${revision}.`)
+console.log(`Built ${pages.filter((page) => page.source.trim()).length + 4} pages from ${revision}.`)

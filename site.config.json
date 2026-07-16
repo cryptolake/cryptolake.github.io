@@ -18,6 +18,74 @@
     "Time series forecasting.md",
     "C compilation under the hood.md"
   ],
+  "projects": [
+    {
+      "name": "Car Detector v2",
+      "area": "Machine learning",
+      "description": "Vehicle extraction and classification with YOLOS, XResNet and FastAPI.",
+      "url": "https://github.com/cryptolake/car_detector_v2"
+    },
+    {
+      "name": "Machine Learning from Scratch",
+      "area": "Machine learning",
+      "description": "Applied mathematics, neural networks, computer vision, NLP and reinforcement learning projects.",
+      "url": "https://github.com/cryptolake/holbertonschool-machine_learning"
+    },
+    {
+      "name": "QA Bot",
+      "area": "Machine learning",
+      "description": "Question answering with BERT and semantic search with FAISS.",
+      "url": "https://github.com/cryptolake/holbertonschool-machine_learning/tree/master/supervised_learning/0x13-qa_bot"
+    },
+    {
+      "name": "Breakout AI",
+      "area": "Machine learning",
+      "description": "A Breakout agent built with a custom deep Q-network.",
+      "url": "https://github.com/cryptolake/holbertonschool-machine_learning/tree/master/reinforcement_learning/0x01-deep_q_learning"
+    },
+    {
+      "name": "Simple Shell",
+      "area": "Systems",
+      "description": "A small Unix shell with built-in cd, env and exit commands.",
+      "url": "https://github.com/cryptolake/simple_shell"
+    },
+    {
+      "name": "Monty",
+      "area": "Systems",
+      "description": "An interpreter for Monty bytecode with stack and queue operations.",
+      "url": "https://github.com/cryptolake/monty"
+    },
+    {
+      "name": "Custom printf",
+      "area": "Systems",
+      "description": "An implementation of the C printf function.",
+      "url": "https://github.com/cryptolake/printf"
+    },
+    {
+      "name": "AirBnB Clone",
+      "area": "Systems",
+      "description": "A full-stack clone with a command interpreter, JSON and MySQL storage, and unit tests.",
+      "url": "https://github.com/cryptolake/AirBnB_clone"
+    },
+    {
+      "name": "Interview Preparation",
+      "area": "Systems",
+      "description": "Data structures and algorithms implemented for technical interview practice.",
+      "url": "https://github.com/cryptolake/holbertonschool-interview"
+    },
+    {
+      "name": "Applied Fun Math",
+      "area": "Mathematics",
+      "description": "Mandelbrot and Julia set visualizations written in C.",
+      "url": "https://github.com/cryptolake/holbertonschool-math/tree/master"
+    },
+    {
+      "name": "Project Euler",
+      "area": "Mathematics",
+      "description": "Solutions to Project Euler problems.",
+      "url": "https://github.com/cryptolake/euler"
+    }
+  ],
   "descriptions": {
     "Car Detector v2.0.md": "Vehicle extraction and classification with YOLOS, XResNet, FastAPI and a custom inference pipeline.",
     "Car Detector.md": "Car make, model, year and color classification from a 20,000-image dataset.",
@@ -32,6 +100,7 @@
     "Optimization.md": "Feature scaling, mini-batches, batch normalization, momentum, RMSProp and Adam.",
     "Regularization in ML.md": "L1, L2, dropout, data augmentation and early stopping.",
     "Summary of the AlexNet paper.md": "Architecture notes from the AlexNet paper.",
-    "My transfer learning experiment.md": "Fine-tuning ResNet-50 on CIFAR-10."
+    "My transfer learning experiment.md": "Fine-tuning ResNet-50 on CIFAR-10.",
+    "Machine Learning.md": "Notes on model training, computer vision and the structure of machine learning projects."
   }
 }

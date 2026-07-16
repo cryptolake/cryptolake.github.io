@@ -1,5 +1,5 @@
 ## About me:
-Hey there! , My name is Dhia and I'm an aspiring Software Engineer/ML Engineer and a forever student, in a journey of self-learning assisted through Holberton School, edx, and coursera.
+My name is Dhia. I'm a Lead AI Researcher working on machine learning systems, computer vision and software.
 
 ## Contacts:
 - CV: [[files/Dhia_Dahmeni_cv.pdf]]

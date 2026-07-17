@@ -397,13 +397,27 @@ function workRow(page, index) {
   </a>`
 }
 
+function experienceRow(item) {
+  return `<article class="experience-row">
+    <div class="experience-period mono-label">${escapeHtml(item.period)}</div>
+    <div class="experience-role">
+      <span class="mono-label">${escapeHtml(item.company)}</span>
+      <h3>${escapeHtml(item.role)}</h3>
+    </div>
+    <p>${escapeHtml(item.description)}</p>
+  </article>`
+}
+
 const selectedPages = config.selected
   .map((filename) => pages.find((page) => page.filename === filename))
   .filter(Boolean)
 
 const homeContent = `
   <section class="hero" aria-labelledby="hero-title">
-    <div class="hero-kicker mono-label">Lead AI Researcher</div>
+    <div class="hero-top">
+      <div class="hero-kicker mono-label">Lead AI Researcher</div>
+      <a class="hero-cv-link" href="${config.cv}" target="_blank" rel="noreferrer">Full CV <span>PDF ↗</span></a>
+    </div>
     <h1 id="hero-title">I build and study <span>machine learning systems.</span></h1>
     <div class="hero-detail">
       <p class="hero-intro">My work covers computer vision, model training, inference runtimes and low-level software. This site has my project write-ups and study notes.</p>
@@ -414,9 +428,21 @@ const homeContent = `
     </div>
   </section>
 
-  <section class="section-block" aria-labelledby="selected-title">
+  <section class="experience section-block" id="experience" aria-labelledby="experience-title">
     <div class="section-heading">
-      <span class="mono-label">01 / Selected work</span>
+      <span class="mono-label">01 / Experience</span>
+      <h2 id="experience-title">Experience</h2>
+      <div class="section-heading-meta">
+        <p>2022 / now<br>AI research, computer vision and software</p>
+        <a class="text-link" href="${config.cv}" target="_blank" rel="noreferrer">Open full CV <span aria-hidden="true">PDF ↗</span></a>
+      </div>
+    </div>
+    <div class="experience-list">${config.experience.map(experienceRow).join("")}</div>
+  </section>
+
+  <section class="selected-work section-block" id="projects" aria-labelledby="selected-title">
+    <div class="section-heading">
+      <span class="mono-label">02 / Selected work</span>
       <h2 id="selected-title">Projects and articles</h2>
       <p>Longer pieces on computer vision, machine learning and systems programming.</p>
     </div>
@@ -429,7 +455,7 @@ const homeContent = `
 
   <section class="about section-block" id="about" aria-labelledby="about-title">
     <div class="section-heading">
-      <span class="mono-label">02 / About</span>
+      <span class="mono-label">03 / About</span>
       <h2 id="about-title">Dhia Dahmeni</h2>
     </div>
     <div class="about-copy">

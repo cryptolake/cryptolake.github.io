@@ -12,6 +12,38 @@
     "Computer vision",
     "Low-level computing"
   ],
+  "experience": [
+    {
+      "period": "2025 / now",
+      "role": "Lead AI Researcher",
+      "company": "Manako Labs",
+      "description": "Computer vision, VLM and LLM research. Building the Manako AI engine."
+    },
+    {
+      "period": "2024 / 2025",
+      "role": "Vision Equipment Engineer",
+      "company": "Tesla",
+      "description": "Vision systems for weld inspection and autonomous vehicle handling."
+    },
+    {
+      "period": "2024 / 2025",
+      "role": "Founding Engineer",
+      "company": "revi.ai",
+      "description": "Deep-search and OSINT agents, knowledge graphs and data collection."
+    },
+    {
+      "period": "2023 / 2024",
+      "role": "Software Engineer",
+      "company": "Datawisp",
+      "description": "Rust and TypeScript analytics infrastructure, data clients and performance work."
+    },
+    {
+      "period": "2022 / 2024",
+      "role": "Full Stack Engineer",
+      "company": "Lokafy",
+      "description": "Django and JavaScript systems, data pipelines and internal tooling."
+    }
+  ],
   "selected": [
     "Car Detector v2.0.md",
     "Hyperparameter Tuning With Bayesian Optimization.md",

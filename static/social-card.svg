@@ -1,14 +1,16 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
   <title id="title">Dhia Dahmeni</title>
   <desc id="desc">Dhia Dahmeni, Lead AI Researcher. Machine learning systems, computer vision, runtimes and low-level software.</desc>
-  <rect width="1200" height="630" fill="#f0f0eb"/>
-  <path d="M56 56H1144V574H56Z" fill="none" stroke="#949c90"/>
-  <path d="M600 56V574" stroke="#d7dbd2"/>
-  <rect x="94" y="94" width="52" height="52" fill="none" stroke="#11130f"/>
-  <text x="105" y="125" fill="#11130f" font-family="monospace" font-size="13" font-weight="700">DD</text>
-  <text x="178" y="128" fill="#11130f" font-family="Arial, sans-serif" font-size="22" font-weight="600">DHIA DAHMENI</text>
-  <text x="94" y="282" fill="#315f4a" font-family="monospace" font-size="16" letter-spacing="2">LEAD AI RESEARCHER</text>
-  <text x="94" y="365" fill="#11130f" font-family="Arial, sans-serif" font-size="54" font-weight="500">Machine learning systems</text>
-  <text x="94" y="430" fill="#52584f" font-family="Arial, sans-serif" font-size="54" font-weight="500">Computer vision / software</text>
-  <text x="94" y="530" fill="#52584f" font-family="monospace" font-size="14">dhia.xyz</text>
+  <rect width="1200" height="630" fill="#e9e6dc"/>
+  <rect x="38" y="38" width="1124" height="554" fill="#f4f2ea" stroke="#101113" stroke-width="2"/>
+  <rect x="38" y="38" width="104" height="554" fill="#2442ff"/>
+  <path d="M142 148H1162M142 500H1162" stroke="#101113" stroke-width="2"/>
+  <text x="71" y="96" fill="#fff" font-family="monospace" font-size="14" font-weight="700">D/01</text>
+  <text x="190" y="103" fill="#101113" font-family="Arial, sans-serif" font-size="24" font-weight="700">Dhia Dahmeni</text>
+  <text x="82" y="214" fill="#fff" font-family="monospace" font-size="13" letter-spacing="2" transform="rotate(90 82 214)">RESEARCH / SHEET 01</text>
+  <rect x="190" y="202" width="12" height="12" fill="#2442ff"/>
+  <text x="220" y="214" fill="#101113" font-family="monospace" font-size="16" letter-spacing="2">LEAD AI RESEARCHER</text>
+  <text x="188" y="344" fill="#101113" font-family="Arial, sans-serif" font-size="62" font-weight="700">Machine learning systems,</text>
+  <text x="188" y="416" fill="#2442ff" font-family="Arial, sans-serif" font-size="62" font-weight="700">from models to runtimes.</text>
+  <text x="188" y="552" fill="#5d605f" font-family="monospace" font-size="15" letter-spacing="1">DHIA.XYZ / PROJECTS / NOTES</text>
 </svg>

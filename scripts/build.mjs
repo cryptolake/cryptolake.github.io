@@ -319,13 +319,13 @@ function nav(active) {
   const items = [
     ["home", "/", "Index"],
     ["projects", "/projects/", "Projects"],
-    ["writing", "/writing/", "Research log"],
-    ["notes", "/notes/", "Field notes"],
+    ["writing", "/writing/", "Log"],
+    ["notes", "/notes/", "Notes"],
   ]
 
   return `<header class="site-header">
     <a class="identity" href="/" aria-label="Dhia Dahmeni, home">
-      <span class="identity-mark" aria-hidden="true">DD</span>
+      <span class="identity-mark" aria-hidden="true">D/01</span>
       <span>Dhia Dahmeni</span>
     </a>
     <nav aria-label="Primary navigation">
@@ -351,7 +351,7 @@ function layout({ title, description, content, active = "", pageClass = "", rout
     <title>${escapeHtml(fullTitle)}</title>
     <meta name="description" content="${escapeHtml(description)}">
     <meta name="author" content="${escapeHtml(config.name)}">
-    <meta name="theme-color" content="#f0f0eb">
+    <meta name="theme-color" content="#f4f2ea">
     ${canonical ? `<link rel="canonical" href="${canonical}">` : ""}
     <meta property="og:type" content="website">
     <meta property="og:title" content="${escapeHtml(fullTitle)}">
@@ -404,7 +404,7 @@ const selectedPages = config.selected
 const homeContent = `
   <section class="hero" aria-labelledby="hero-title">
     <div class="hero-kicker mono-label">Lead AI Researcher</div>
-    <h1 id="hero-title">I build and study machine learning systems.</h1>
+    <h1 id="hero-title">I build and study <span>machine learning systems.</span></h1>
     <div class="hero-detail">
       <p class="hero-intro">My work covers computer vision, model training, inference runtimes and low-level software. This site has my project write-ups and study notes.</p>
       <div class="focus-list" aria-label="Areas of focus">
@@ -643,8 +643,8 @@ await writeFile(
       short_name: config.shortName,
       start_url: "/",
       display: "standalone",
-      background_color: "#f0f0eb",
-      theme_color: "#f0f0eb",
+      background_color: "#f4f2ea",
+      theme_color: "#2442ff",
       icons: [{ src: "/icon.svg", sizes: "any", type: "image/svg+xml" }],
     },
     null,
